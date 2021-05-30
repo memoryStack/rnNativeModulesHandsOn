@@ -20,7 +20,7 @@ public class MyAppPackage implements ReactPackage {
         // list of the native modules to be registered on the JS side
         List<NativeModule> modules = new ArrayList<>();
 
-        modules.add(new CalendarModule(reactContext));
+        modules.add(new CalenderModule(reactContext));
 
         return modules;
     }

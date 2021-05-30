@@ -8,21 +8,21 @@ import java.util.Map;
 import java.util.HashMap;
 import android.util.Log;
 
-public class CalendarModule extends ReactContextBaseJavaModule {
-    CalendarModule(ReactApplicationContext context) {
+public class CalenderModule extends ReactContextBaseJavaModule {
+    CalenderModule(ReactApplicationContext context) {
         super(context);
     }
 
     // this returned string would be used as the NativeModule name by the JavaScript Side
     @Override
     public String getName() {
-        return "CalendarModule";
+        return "CalenderModule";
     }
 
     // All native module methods meant to be invoked from JavaScript must be annotated with @ReactMethod
     @ReactMethod
     public void createCalendarEvent(String name, String location) {
-        Log.d("CalendarModule", "Create event called with name: " + name
+        Log.d("CalenderModule", "Create event called with name: " + name
                 + " and location: " + location);
     }
 
